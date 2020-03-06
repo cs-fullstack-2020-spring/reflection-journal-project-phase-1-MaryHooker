@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflections</title>
+
+    <link rel="stylesheet" href="reflections.css".css">
+</head>
+<body>
+    <div>
+
+        <form action="">
+
+            <fieldset>
+                <legend>Add New Reflection Journal Entry</legend>
+
+                <div>
+                    <label for="date">Reflection Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <div>
+                    <label for="reflectionText">Reflection Text</label>
+                    <textarea name="reflection" id="reflectionText" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+
+                    <input type="radio" name="radio" id="low">
+                    <label for="low">Low Confidence</label>
+                    
+                    <input type="radio" name="radio" id="medium">
+                    <label for="medium">Medium Confidence</label>
+
+                    <input type="radio" name="radio" id="high">
+                    <label for="high">High Confidence</label>
+                    
+                </div>
+
+                <button>Save Reflection</button>
+
+                <button>Clear Form</button>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+    <script src="reflections.js"></script>
+</body>
+</html>

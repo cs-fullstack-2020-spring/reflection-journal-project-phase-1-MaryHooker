@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reflections</title>
 
-    <link rel="stylesheet" href="reflections.css".css">
+    <link rel="stylesheet" href="reflections.css">
 </head>
+
 <body>
     <div>
 
         <form action="">
 
             <fieldset>
-                <legend>Add New Reflection Journal Entry</legend>
+                <legend class='legend'>Add New Reflection Journal Entry</legend>
 
-                <div>
-                    <label for="date">Reflection Date</label>
-                    <input type="date" name="date" id="date">
+                <div class='container'>
+
+                    <div class='reflectionDate'>
+                        <label for="date">Reflection Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+
+                    <div class='reflectionBody'>
+                        <!-- <label for="reflectionText">Reflection Text</label> -->
+                        <textarea name="reflection" id="reflectionText" cols="50" rows="20"></textarea>
+                    </div>
+
+                    <div class='low'>
+                        <input type="radio" name="radio" id="low">
+                        <label for="low">Low Confidence</label>
+                    </div>
+
+                    <div class='medium'>
+                        <input type="radio" name="radio" id="medium">
+                        <label for="medium">Medium Confidence</label>
+                    </div>
+
+                    <div class='high'>
+                        <input type="radio" name="radio" id="high">
+                        <label for="high">High Confidence</label>
+                    </div>
+
+
+                    <button class='save'>Save Reflection</button>
+
+
+                    <button class='clear'>Clear Form</button>
+
+
                 </div>
-
-                <div>
-                    <label for="reflectionText">Reflection Text</label>
-                    <textarea name="reflection" id="reflectionText" cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-
-                    <input type="radio" name="radio" id="low">
-                    <label for="low">Low Confidence</label>
-                    
-                    <input type="radio" name="radio" id="medium">
-                    <label for="medium">Medium Confidence</label>
-
-                    <input type="radio" name="radio" id="high">
-                    <label for="high">High Confidence</label>
-                    
-                </div>
-
-                <button>Save Reflection</button>
-
-                <button>Clear Form</button>
-
             </fieldset>
 
         </form>
@@ -50,4 +60,5 @@
 
     <script src="reflections.js"></script>
 </body>
+
 </html>

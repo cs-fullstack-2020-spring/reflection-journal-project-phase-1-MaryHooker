@@ -29,26 +29,16 @@
                         <textarea name="reflection" id="reflectionText" cols="50" rows="20"></textarea>
                     </div>
 
-                    <div class='low'>
-                        <input type="radio" name="radio" id="low">
-                        <label for="low">Low Confidence</label>
-                    </div>
+                    <select class= 'confidenceLevel' name="selector" id="confidence">
+                        <option value="">Confidence Level</option>
+                        <option value="low">Low Confidence</option>
+                        <option value="medium">Medium Confidence</option>
+                        <option value="high">High Confidence</option>
 
-                    <div class='medium'>
-                        <input type="radio" name="radio" id="medium">
-                        <label for="medium">Medium Confidence</label>
-                    </div>
-
-                    <div class='high'>
-                        <input type="radio" name="radio" id="high">
-                        <label for="high">High Confidence</label>
-                    </div>
+                    </select>
 
 
                     <button class='save'>Save Reflection</button>
-
-
-                    <button class='clear'>Clear Form</button>
 
 
                 </div>

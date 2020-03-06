@@ -1,46 +1,76 @@
+
 .container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
     height: 90vh;
+    background-color: rgb(231, 220, 220);
 }
 
 .legend{
-    font-size: 25px;
-}
-
-.reflectionDate{
-    grid-column: 2/5;
-    grid-row: 1;
-    font-size: 25px;
-    margin-top: 30px;
-    margin-left: 30%;
-}
-
-.reflectionBody{
-    grid-column: 2/6;
-    grid-row: 2/5;
-    font-size: 25px;
-    margin-left: 18%;
-    margin-top: 25px;
+    font-size: 30px;
+    color: purple;
+    font-weight: bold;
     
 }
 
+.border{
+    border: solid 8px purple;
+}
+
+.reflectionDate{
+    grid-column: 1/3;
+    grid-row: 1;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 45%;
+    color: purple;
+    font-weight: bold;
+}
+
+.reflectionBody{
+    grid-column: 1/4;
+    grid-row: 2/5;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+#reflectionText{
+    background-color: purple;
+    color: white;
+}
+
 .confidenceLevel{
-    grid-column: 2/5;
+    grid-column: 1/4;
     grid-row: 6;
     width: 40%;
-    height: 40%;
+    height: 50%;
     font-size: 15px;
     margin-left: 27%;
+    background-color: purple;
+    font-weight: bold;
+    color: white;
 }
 
 .save{
-    grid-column: 3/5;
+    grid-column: 1/3;
     grid-row: 7;
     width: 35%;
     height: 120%;
     font-size: 15px;
     margin-bottom: 20px;
+    margin-left: 52%;
+    background-color: purple;
+    font-weight: bold;
+    color: white;
 }
 
+.renderedReflection{
+    grid-column: 4/5;
+    grid-row: 2/5;
+    font-size: 20px;
+    width: 130%;
+    color: purple;
+    
+}

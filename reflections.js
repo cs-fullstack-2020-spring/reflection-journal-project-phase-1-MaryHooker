@@ -22,26 +22,26 @@ let displayInBrowser = document.querySelector('.renderedReflection')
 //sanity
 // console.log(displayInBrowser);
 
-let reflectionEntries = [];
 
 //Create a function that stores the users input and pushes to array
 let onClick = (event) => {
     event.preventDefault();
     //Create a journal entries array with object literal notation
-    reflectionEntries = [];
+    let reflectionEntries = [];
     //Create object literal notation to store user input
     let everyEntry = {
-        creation_date: reflectionDate,
-        journal_entry: reflectionText,
-        confidence_level: confidence
+        creation_date: reflectionDate.value,
+        journal_entry: reflectionText.value,
+        confidence_level: confidence.value
     };
     reflectionEntries.push(everyEntry);
 
-    // reflectionEntries.forEach();
+    
     //display the inputs inside the browser
-    displayInBrowser.innerText= `Reflection date: ${everyEntry.creation_date.value}\nReflection: ${everyEntry.journal_entry.value}.\nConfidence level: ${everyEntry.confidence_level.value}`;
+    displayInBrowser.innerText= `Date: ${reflectionEntries[0].creation_date}\nReflection: ${reflectionEntries[0].journal_entry}\nConfidence Level: ${reflectionEntries[0].confidence_level}`;
 
-    console.log(reflectionEntries);
+    // console.log(reflectionEntries);
+    // reflectionEntries.forEach();
 }
 
 
@@ -50,23 +50,3 @@ submitButton.addEventListener('click', onClick);
 
 
 
-
-
-
-
-
-
-
-// renderReflectionJournalEntries();
-
-// let renderReflectionJournalEntries = () => {
-    
-// };
-
-//   `The reflection date is: ${reflectionEntries.creation_date}.
-//   Their reflection is: ${reflectionEntries.journal_entry}.Their confidence level is: ${reflectionEntries.confidence_level}.`
-// );
-
-// everyEntry.creation_date = reflectionDate.value;
-//     everyEntry.journal_entry = reflectionText.value;
-//     everyEntry.confidence_level = confidence.value;

@@ -36,7 +36,7 @@ let onClick = (event) => {
     };
     reflectionEntries.push(everyEntry);
 
-    
+    // !! you should be iterating through the array to update the inner text of the empty div 
     //display the inputs inside the browser
     displayInBrowser.innerText= `Date: ${reflectionEntries[0].creation_date}\nReflection: ${reflectionEntries[0].journal_entry}\nConfidence Level: ${reflectionEntries[0].confidence_level}`;
 

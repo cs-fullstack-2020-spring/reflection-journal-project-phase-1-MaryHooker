@@ -10,45 +10,45 @@
 </head>
 
 <body>
-    <div>
+    <div class='container'>
 
-        <form action="">
+        <form action="" id='form'>
 
             <fieldset class='border'>
-                <legend class='legend'>Add New Reflection Journal Entry</legend>
-
-                <div class='container'>
-
-                    <div class='reflectionDate'>
-                        <label for="date">Reflection Date</label>
-                        <input type="date" name="date" id="date">
-                    </div>
-
-                    <div class='reflectionBody'>
-                        <!-- <label for="reflectionText">Reflection Text</label> -->
-                        <textarea name="reflection" id="reflectionText" cols="50" rows="20"></textarea>
-                    </div>
-
-                    <select class= 'confidenceLevel' name="selector" id="confidence">
-                        <option value="">Confidence Level</option>
-                        <option value="low">Low Confidence</option>
-                        <option value="medium">Medium Confidence</option>
-                        <option value="high">High Confidence</option>
-
-                    </select>
-
-                    <button class='save'>Save Reflection</button>
-
-                    <div class='renderedReflection'>
-                        <p></p>
-                    </div>
+                <legend class='legend'>New Reflection Entry</legend>
 
 
+                <div class='reflectionDate'>
+                    <label for="date">Reflection Date</label>
+                    <input type="date" name="date" id="date">
                 </div>
+
+                <div class='reflectionBody'>
+                    <textarea name="reflection" id="reflectionText" cols="50" rows="20"
+                        placeholder='Enter Reflection here'></textarea>
+                </div>
+
+                <select class='confidenceLevel' name="selector" id="confidence">
+                    <option value="">Confidence Level</option>
+                    <option value="low">Low Confidence</option>
+                    <option value="medium">Medium Confidence</option>
+                    <option value="high">High Confidence</option>
+
+                </select>
+
+                <br>
+                
+                <button class='save'>Save Reflection</button>
+
+
             </fieldset>
 
         </form>
 
+        <fieldset class='renderedReflection'>
+            <legend>Recent Entries</legend>
+            <p class='reflectionText' id="recent"></p>
+        </fieldset>
     </div>
 
     <script src="reflections.js"></script>

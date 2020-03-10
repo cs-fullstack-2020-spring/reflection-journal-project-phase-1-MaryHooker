@@ -1,76 +1,104 @@
 
 .container{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    height: 90vh;
-    background-color: rgb(231, 220, 220);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    background-color: rgb(212, 176, 221);
+    height: 95vh;
+    border: solid 10px purple;
 }
 
 .legend{
     font-size: 30px;
     color: purple;
     font-weight: bold;
-    
+}
+
+#form{
+    grid-column: 1;
+    padding-top: 15px;
 }
 
 .border{
     border: solid 8px purple;
+    height: 85vh;
+}
+
+::placeholder{
+    color: pink;
 }
 
 .reflectionDate{
-    grid-column: 1/3;
-    grid-row: 1;
+    padding: 15px;
+    margin-left: 23%;
     font-size: 25px;
-    margin-top: 30px;
-    margin-left: 45%;
     color: purple;
     font-weight: bold;
 }
 
+#date{
+    background-color: purple;
+    color: pink;
+    font-size: 15px;
+    border: solid 3px pink;
+    
+}
+
 .reflectionBody{
-    grid-column: 1/4;
     grid-row: 2/5;
     font-size: 25px;
-    margin-left: 25%;
-    margin-top: 25px;
+    padding: 15px;
+    margin-left: 15%;
+    
 }
 
 #reflectionText{
     background-color: purple;
-    color: white;
+    color: pink;
+    font-size: 15px;
+    border: solid 3px pink;
 }
 
 .confidenceLevel{
-    grid-column: 1/4;
     grid-row: 6;
-    width: 40%;
-    height: 50%;
-    font-size: 15px;
-    margin-left: 27%;
+    width: 50%;
+    font-size: 16px;
     background-color: purple;
     font-weight: bold;
-    color: white;
+    color: pink;
+    padding: 10px;
+    margin-left: 24%;
+    margin-top: 10px;
+    border: solid 3px pink;
 }
 
 .save{
-    grid-column: 1/3;
     grid-row: 7;
     width: 35%;
-    height: 120%;
-    font-size: 15px;
-    margin-bottom: 20px;
-    margin-left: 52%;
+    font-size: 16px;
     background-color: purple;
     font-weight: bold;
-    color: white;
+    color: pink;
+    padding: 10px;
+    margin-left: 31%;
+    margin-top: 24px;
+    border: solid 3px pink;
 }
 
 .renderedReflection{
-    grid-column: 4/5;
-    grid-row: 2/5;
+    grid-column: 2;
+    border: solid 8px purple;
+    font-size: 30px;
+    font-weight: bold;
+    color: purple; 
+    margin-top: 15px;
+    
+}
+
+.reflectionText{
     font-size: 20px;
-    width: 130%;
     color: purple;
+    grid-column: 2;
+    height: 65px;
     
 }

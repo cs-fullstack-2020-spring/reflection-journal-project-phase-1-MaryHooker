@@ -42,7 +42,7 @@ let onClick = (event) => {
     displayEntries(reflectionEntries);
 
 };
-
+    
 
 //Create a function that uses the empty string as its parameters and replaces the innerText in the browser
 let displayEntries = (reflectionEntries) => {

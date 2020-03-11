@@ -17,15 +17,13 @@
             <fieldset class='border'>
                 <legend class='legend'>New Reflection Entry</legend>
 
-
                 <div class='reflectionDate'>
-                    <label for="date">Reflection Date</label>
                     <input type="date" name="date" id="date">
                 </div>
 
                 <div class='reflectionBody'>
-                    <textarea name="reflection" id="reflectionText" cols="50" rows="20"
-                        placeholder='Enter Reflection here'></textarea>
+                    <textarea name="reflection" id="reflectionText" cols="64" rows="18"
+                        placeholder='Start writing...'></textarea>
                 </div>
 
                 <select class='confidenceLevel' name="selector" id="confidence">
@@ -38,7 +36,7 @@
 
                 <br>
                 
-                <button class='save'>Save Reflection</button>
+                <button class='save'>Save</button>
 
 
             </fieldset>
@@ -46,7 +44,7 @@
         </form>
 
         <fieldset class='renderedReflection'>
-            <legend>Recent Entries</legend>
+            <legend class='recentLegend'>Recent Reflections</legend>
             <p class='reflectionText' id="recent"></p>
         </fieldset>
     </div>
